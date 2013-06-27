@@ -73,6 +73,20 @@ static GstStaticPadTemplate src_template = GST_STATIC_PAD_TEMPLATE ("src",
             "framerate = [0/1, 100/1], "
             "pixel-aspect-ratio = (fraction) 12/11"
             ";"
+        "video/x-raw, "
+            "format =" DEVICE_YUV_FOURCC ", "
+            "width = (int) 1280, "
+            "height = (int) 720, "
+            "framerate = [0/1, 100/1], "
+            "pixel-aspect-ratio = (fraction) 1/1"
+            "; "
+        "video/x-raw, "
+            "format =" DEVICE_YUV_FOURCC ", "
+            "width = (int) 1920, "
+            "height = (int) 1080, "
+            "framerate = [0/1, 100/1], "
+            "pixel-aspect-ratio = (fraction) 1/1"
+            "; "
     )
 );
 
